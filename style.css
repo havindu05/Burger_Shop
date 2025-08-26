@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+body {
+    background-image: url("assest/images/vegetables-set-left-black-slate.jpg");
+    background-size: cover;        
+    background-position: center; 
+    background-repeat: no-repeat;  
+    height: 100vh;                 
+    margin: 0;                    
+  }
