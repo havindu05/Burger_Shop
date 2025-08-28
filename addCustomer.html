@@ -84,86 +84,22 @@
     </div>
 
 
-    <div class="min-h-screen flex items-center justify-center">
-        <form class="max-w-md w-full bg-transparent p-6 rounded-lg">
-          
-          <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="customer_id" id="customer_id" 
-              class="block py-2.5 px-0 w-full text-sm text-white 0 bg-transparent border-0 
-              border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
-              dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
-              placeholder=" " required />
-            <label for="customer_id" 
-              class="absolute text-sm text-yellow-300 duration-300 transform 
-              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 
-              peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6 
-              peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Customer Id</label>
-          </div>
-      
-          <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="name" id="name" 
-              class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 
-              border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
-              dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
-              placeholder=" " required />
-            <label for="name" 
-              class="absolute text-sm text-yellow-300 duration-300 transform 
-              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 
-              peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6 
-              peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Name</label>
-          </div>
-      
-          <div class="relative z-0 w-full mb-5 group">
-            <input type="tel" name="phone" id="phone" 
-              class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 
-              border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
-              dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
-              placeholder=" " required />
-            <label for="phone" 
-              class="absolute text-sm text-yellow-300 duration-300 transform 
-              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 
-              peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6 
-              peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Phone Number</label>
-          </div>
-      
-          <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="order_type" id="order_type" 
-              class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 
-              border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
-              dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
-              placeholder=" " required />
-            <label for="order_type" 
-              class="absolute text-sm text-yellow-300 duration-300 transform 
-              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 
-              peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6 
-              peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Take Away / Dine In</label>
-          </div>
-
-          <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="order_type" id="order_type" 
-              class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 
-              border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
-              dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
-              placeholder=" " required />
-            <label for="order_type" 
-              class="absolute text-sm text-yellow-300  duration-300 transform 
-              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 
-              peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6 
-              peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Price</label>
-          </div>
-      
-         
-          <button type="submit" 
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
-            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center 
-            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-        </form>
-      </div>
-      
-      
+    <div class="flex justify-center items-center min-h-screen">
+        <form id="customerForm" class="max-w-md w-full bg-transparent p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold mb-4 text-yellow-400 text-center">Add Customer</h2>
+        
+        <input type="text" id="customer_id" placeholder="Customer ID" class="w-full mb-3 p-2 border rounded">
+        <input type="text" id="name" placeholder="Name" class="w-full mb-3 p-2 border rounded">
+        <input type="text" id="phone" placeholder="Phone" class="w-full mb-3 p-2 border rounded">
+        <input type="text" id="order_type" placeholder="Order Type" class="w-full mb-3 p-2 border rounded">
+        <input type="text" id="price" name="price" placeholder="Price" readonly class="w-full mb-3 p-2 border rounded">
+        
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Add Customer</button>
+      </form>
+    
 
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-
+<script src="home.js"></script>
 </html>
