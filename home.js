@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("lastCustomerId", newId);
         return newId;
     }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("customer_id").value = generateCustomerId();
+    });
 
     function renderTable() {
         let customers = JSON.parse(localStorage.getItem("customers")) || [];
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let customers = JSON.parse(localStorage.getItem("customers")) || [];
 
             if (customers.some(c => c.phone === phone)) {
-                alert("Customer with this phone already exists!");
+                alert("This Customer is already exists!");
                 return;
             }
 
@@ -83,3 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderTable();
 });
+

@@ -23,7 +23,7 @@
                 </a>
 
                 <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-white bg-black rounded-lg md:hidden 
-                     hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
                     aria-controls="navbar-dropdown" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -50,8 +50,8 @@
                                 Customer
                                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 10 6">
-                                    <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="m1 1 4 4 4-4" />
+                                    <path stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg>
                             </button>
 
@@ -60,11 +60,11 @@
                                 <ul class="py-2 text-sm text-white">
                                     <li><a href="addCustomer.html" class="block px-4 py-2 hover:bg-yellow-400">Add
                                             Customer</a></li>
-                                    <li><a href="updateCustomer.html" class="block px-4 py-2 hover:bg-yellow-400">Update
+                                    <li><a href="updateCustomer.html"
+                                            class="block px-4 py-2 hover:bg-yellow-400">Update
                                             Customer</a></li>
-                                    <li><a href="deleteCustomer.html" class="block px-4 py-2 hover:bg-yellow-400">Delte
-                                            Customer</a></li>
-                                    <li><a href="searchCustomer.html" class="block px-4 py-2 hover:bg-yellow-400">Search
+                                    <li><a href="deleteCustomer.html"
+                                            class="block px-4 py-2 hover:bg-yellow-400">Delte
                                             Customer</a></li>
                                     <li><a href="viewCustomer.html" class="block px-4 py-2 hover:bg-yellow-400">View
                                             Customers</a></li>
@@ -72,7 +72,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="Contact.html"
                                 class="block py-2 px-3 text-white rounded hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-400">Contact
                                 Us</a>
                         </li>
@@ -82,13 +82,15 @@
             </div>
         </nav>
     </div>
+</div>
 
 
     <div class="flex justify-center items-center min-h-screen">
         <form id="customerForm" class="max-w-md w-full bg-transparent p-6 rounded-lg shadow-lg">
             <h2 class="text-xl font-bold mb-4 text-yellow-400 text-center">Add Customer</h2>
 
-            <div id="customer_id"  class="w-full"></div> 
+            <input type="text" id="customer_id" placeholder="Customer ID"
+                class="w-full mb-3 p-2 border rounded bg-gray-200" readonly>
             <input type="text" id="name" placeholder="Name" class="w-full mb-3 p-2 border rounded">
             <input type="text" id="phone" placeholder="Phone" class="w-full mb-3 p-2 border rounded">
             <input type="text" id="itemName" placeholder="Item" readonly class="w-full mb-3 p-2 border rounded">

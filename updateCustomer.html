@@ -82,6 +82,30 @@
             </div>
         </nav>
     </div>
+
+    <div class="flex justify-center items-center min-h-screen">
+        <form id="customerForm" class="max-w-md w-full bg-transparent p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4 text-yellow-400 text-center">Update Customer</h2>
+
+            <input type="text" id="customer_id" placeholder="Customer ID"
+            class="w-full mb-3 p-2 border rounded bg-gray-200">
+            <input type="text" id="name" placeholder="Name" class="w-full mb-3 p-2 border rounded">
+            <input type="text" id="phone" placeholder="Phone" class="w-full mb-3 p-2 border rounded">
+            <input type="text" id="itemName" placeholder="Item" readonly class="w-full mb-3 p-2 border rounded">
+            <select id="order_type" class="w-full mb-3 p-2 border rounded">
+                <option value="dine-in">Dine In</option>
+                <option value="takeaway">Takeaway</option>
+                <option value="delivery">Delivery</option>
+            </select>
+            <input type="text" id="price" name="price" placeholder="Price" readonly
+                class="w-full mb-3 p-2 border rounded">
+
+            <button type="button" id="addCustomerBtn" class="w-full bg-green-500 text-white py-2 rounded">
+                Update Customer
+            </button>
+        </form>
+
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 
