@@ -86,5 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     renderTable();
+
+    
+
 });
+
 
